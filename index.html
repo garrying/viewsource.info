@@ -1,0 +1,79 @@
+<!--
+  Hello earth!
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>view source</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/vendor/tachyons.min.css">
+
+  <meta property="og:title" content="view source">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viewsource.info">
+  <meta property="og:image" content="https://viewsource.info/img/preview.png">
+  <meta property="og:description" content="issue 03, spring 2024, the html review" />
+  <meta name="description" content="issue 03, spring 2024, the html review">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://viewsource.info">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+</head>
+
+<body class="sans-serif bg-background subpixel-antialiased">
+  <h1 class="normal">viewsource.info</h1>
+  <p class="f6 lh-copy mw6">HTML is behind every website we view<sup class="reference" id="ref1_note"><a href="#ref1" class="link underline-hover">[1]</a></sup>. Every day, HTML is all around us. Come write some in the park together!</p>
+  <ul class="f6 lh-copy">
+    <li>first item</li>
+    <li>second item</li>
+    <li>third item</li>
+  </ul>
+  <ol class="f6">
+    <li class="reference" id="ref1">
+      <a href="#ref1_note" class="link underline-hover" title="Jump to">^</a> <a class="link underline-hover" href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">The World Wide Web project</a>
+    </li>
+  </ol>
+  <details>
+    <summary class="f6 pointer">Territorial Acknowledgment</summary>
+    <p class="f6 lh-copy mw6">
+      We would like to acknowledge the sacred land on which this event will take place. Tkaronto (Toronto) has been a site of human activity for 15,000 years.
+    </p>
+    <p class="f6 lh-copy mw6">
+      Tkaronto is situated on land that is the traditional territory of many nations including the Mississaugas of the Credit, the Anishnabeg, the Chippewa, the Haudenosaunee and the Wendat peoples and is now home to many diverse First Nations, Inuit and Métis peoples. We honor the sovereignty of the Indigenous people and nations whose land we live, work and play on. The territory was the subject of the Dish With One Spoon Wampum Belt Covenant, an agreement between the Anishinaabek and Haudenosaunee people and allied nations to collectively share and care for the resources around the Great Lakes.
+    </p>
+  </details>
+  <details>
+    <summary class="f6 pointer">Colophon</summary>
+    <p class="f6 lh-copy mw6">
+      We would like to acknowledge the sacred land on which this event will take place. Tkaronto (Toronto) has been a site of human activity for 15,000 years.
+    </p>
+    <p class="f6 lh-copy mw6">
+      Tkaronto is situated on land that is the traditional territory of many nations including the Mississaugas of the Credit, the Anishnabeg, the Chippewa, the Haudenosaunee and the Wendat peoples and is now home to many diverse First Nations, Inuit and Métis peoples. We honor the sovereignty of the Indigenous people and nations whose land we live, work and play on. The territory was the subject of the Dish With One Spoon Wampum Belt Covenant, an agreement between the Anishinaabek and Haudenosaunee people and allied nations to collectively share and care for the resources around the Great Lakes.
+    </p>
+  </details>
+  <div class="fixed bottom-0 flex bt w-100 bg-white items-center pv2 ph4 f4 spacebetween justify-between" id="support">
+    <!-- <div>
+      <p class="button-text f6"></p>
+      <input type="button" id="button" value="Open file">
+    </div> -->
+    <div class="flex">
+      <div class="mr4">
+        <input type="checkbox" id="inspect" name="inspect" checked />
+        <label for="inspect">inspect</label>
+      </div>
+      <div>
+        <input type="checkbox" id="dusk" name="dusk" />
+        <label for="dusk">dusk</label>
+      </div>
+    </div>
+    <div class="monospace f4" id="element"></div>
+    <a class="f7 no-underline ba b--dotted br-pill ph2 pv1 black" href="https://github.com/garrying/viewsource.info" target="_blank">view source on GitHub</a>
+  </div>
+  <script type="text/javascript" src="/js/modules/dom-inspector.js"></script>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

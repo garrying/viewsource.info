@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'jgs7';
+  src: url('fonts/jgs7.woff2') format('woff2'),
+      url('fonts/jgs7.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jgs5';
+  src: url('fonts/jgs5.woff2') format('woff2'),
+      url('fonts/jgs5.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jgs9';
+  src: url('fonts/jgs9.woff2') format('woff2'),
+      url('fonts/jgs9.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'jgs_font';
+  src: url('fonts/jgs_font.woff2') format('woff2'),
+      url('fonts/jgs_font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  --background: #ecece1;
+  --inspector-margin: rgba(7, 179, 253, 0.174);
+  --inspector-padding: rgba(81, 255, 126, 0.75);
+  --inspector-border: rgba(255, 241, 81, 0.75);
+  --inspector-content: rgba(251, 80, 18, 0.2);
+  --inspector-tip: #fff;
+  --inspector-tag: #000;
+  --inspector-id: #333;
+  --inspector-class: #444;
+  --inspector-size: #000;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.reference:target {
+  background-color: #ffff00;
+}
+
+.bg-background {
+  background-color: var(--background);
+}
+
+.monospace {
+  font-family: var(--font-family-mono);
+}
+
+/* dom inspector */
+
+.dom-inspector {
+  position: fixed;
+  pointer-events: none;
+  outline-color: rgba(251, 80, 18, 0.5);
+  outline-style: dotted;
+  outline-width: 2px;
+}
+
+.dom-inspector>div {
+  position: absolute;
+}
+
+.dom-inspector .tips {
+  border: 2px dotted var(--inspector-tag);
+  background-color: var(--inspector-tip);
+  padding: 10px 20px;
+  position: fixed;
+  border-radius: 9999px;
+  display: none;
+}
+
+.dom-inspector .tips>div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: var(--font-family-mono);
+  overflow: auto;
+}
+
+.dom-inspector .tips .tag {
+  font-weight: bold;
+  color: var(--inspector-tag);
+}
+
+.dom-inspector .tips .id {
+  color: var(--inspector-id);
+}
+
+.dom-inspector .tips .class {
+  color: var(--inspector-class);
+}
+
+.dom-inspector .tips .size {
+  margin-left: 1em;
+  color: var(--inspector-size);
+}
+
+.inspector .margin {
+  background-color: var(--inspector-margin);
+}
+
+.inspector .border {
+  background-color: var(--inspector-border);
+}
+
+.inspector .padding {
+  background-color: var(--inspector-padding);
+}
+
+.inspector .content {
+  background-color: var(--inspector-content);
+}
