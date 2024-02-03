@@ -35,7 +35,7 @@
 }
 
 :root {
-  --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  --font-family-mono: 'jgs_font',ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   --background: #ecece1;
   --inspector-margin: rgba(7, 179, 253, 0.174);
   --inspector-padding: rgba(81, 255, 126, 0.75);
@@ -53,7 +53,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.reference:target {
+.reference:target,
+.footnote:target {
   background-color: #ffff00;
 }
 
