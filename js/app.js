@@ -4,7 +4,7 @@ import './modules/dusk.js'
 
 const inspector = new DomInspector({
   root: 'body',
-  exclude: ['body'],
+  exclude: ['body', '.inspect-ignore'],
   theme: 'inspector'
 })
 
