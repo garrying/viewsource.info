@@ -35,12 +35,12 @@
 }
 
 :root {
-  --font-family-mono: 'jgs_font',ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   --background: #ecece1;
-  --inspector-margin: rgba(7, 179, 253, 0.174);
-  --inspector-padding: rgba(81, 255, 126, 0.75);
-  --inspector-border: rgba(255, 241, 81, 0.75);
-  --inspector-content: rgba(251, 80, 18, 0.2);
+  --inspector-margin: rgba(146, 146, 146, 0.2);
+  --inspector-padding: rgba(192, 192, 192, 0.75);
+  --inspector-border: rgba(154, 154, 154, 0.75);
+  --inspector-content: rgba(190, 190, 190, 0.174);
   --inspector-tip: #fff;
   --inspector-tag: #000;
   --inspector-id: #333;
@@ -66,12 +66,26 @@
   font-family: var(--font-family-mono);
 }
 
+.copy-content {
+  font-size: clamp(1rem, 1.5vw, 3vw);
+  line-height: 1.45em;
+}
+
+.measure-content {
+  width: 50%;
+  min-width: 400px;
+}
+
+.balanced {
+  text-wrap: balance;
+}
+
 /* dom inspector */
 
 .dom-inspector {
   position: fixed;
   pointer-events: none;
-  outline-color: rgba(251, 80, 18, 0.5);
+  outline-color: var(--inspector-border);
   outline-style: dotted;
   outline-width: 2px;
 }
@@ -81,7 +95,6 @@
 }
 
 .dom-inspector .tips {
-  border: 2px dotted var(--inspector-tag);
   background-color: var(--inspector-tip);
   padding: 10px 20px;
   position: fixed;
@@ -92,7 +105,7 @@
 .dom-inspector .tips>div {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 12px;
   font-family: var(--font-family-mono);
   overflow: auto;
 }
