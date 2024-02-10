@@ -332,8 +332,11 @@
           tipsTop = marginLevel.height + elementInfo.top + 8
         }
         addRule(this.overlay.tips, { top: tipsTop + 'px', left: elementInfo.left + 'px', display: 'block' })
+        
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML = `&lt;${this.target.tagName.toLowerCase()}&gt;`
 
-        document.querySelector('#element').innerHTML = `&lt;${this.target.tagName.toLowerCase()}&gt;`
+        document.querySelector('#taglist').appendChild(newDiv)
       }
     }, {
       key: '_formatExcludeOption',

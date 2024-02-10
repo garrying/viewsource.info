@@ -36,7 +36,7 @@
 
 :root {
   --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
-  --background: #ecece1;
+  --background: #F0E6D5;
   --inspector-margin: rgba(146, 146, 146, 0.2);
   --inspector-padding: rgba(192, 192, 192, 0.75);
   --inspector-border: rgba(154, 154, 154, 0.75);
