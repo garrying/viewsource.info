@@ -80,6 +80,10 @@
   text-wrap: balance;
 }
 
+.element-token {
+  background-color: #DBD6C9;
+}
+
 /* dom inspector */
 
 .dom-inspector {

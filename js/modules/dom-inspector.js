@@ -332,9 +332,10 @@
           tipsTop = marginLevel.height + elementInfo.top + 8
         }
         addRule(this.overlay.tips, { top: tipsTop + 'px', left: elementInfo.left + 'px', display: 'block' })
-        
-        var newDiv = document.createElement("div");
+
+        const newDiv = document.createElement('div')
         newDiv.innerHTML = `&lt;${this.target.tagName.toLowerCase()}&gt;`
+        newDiv.className = 'br-pill py1 ph2 mt2 element-token'
 
         document.querySelector('#taglist').appendChild(newDiv)
       }
