@@ -39,7 +39,7 @@
   --background: #F0E6D5;
   --inspector-margin: rgba(146, 146, 146, 0.2);
   --inspector-padding: rgba(192, 192, 192, 0.75);
-  --inspector-border: rgba(154, 154, 154, 0.75);
+  --inspector-border: #e3d9c9;
   --inspector-content: rgba(190, 190, 190, 0.174);
   --inspector-tip: #fff;
   --inspector-tag: #000;
@@ -86,12 +86,41 @@
 
 /* dom inspector */
 
+.inspect-ornament {
+  left: 0;
+  right: 0;
+}
+
+.inspect-ornament::after, .inspect-ornament::before {
+  font-family: var(--font-family-mono);
+  content: '+';
+  position: absolute;
+  opacity: 0.15;
+  top: -1em;
+}
+
+.inspect-ornament::before {
+  right: -1em;
+}
+
+.inspect-ornament::after {
+  left: -1em;
+}
+
+.inspect-top {
+  top: 0;
+}
+
+.inspect-bottom {
+  bottom: -1em;
+}
+
 .dom-inspector {
   position: fixed;
   pointer-events: none;
   outline-color: var(--inspector-border);
-  outline-style: dotted;
-  outline-width: 2px;
+  outline-style: outset;
+  outline-width: 5px;
 }
 
 .dom-inspector>div {

@@ -231,6 +231,9 @@
           style: 'z-index: ' + this.maxZIndex
         })
 
+        parent.appendChild(Object.assign(document.createElement('div'), { className: 'inspect-ornament inspect-top' }))
+        parent.appendChild(Object.assign(document.createElement('div'), { className: 'inspect-ornament inspect-bottom' }))
+
         this.overlay = {
           parent,
           content: this._createSurroundEle(parent, 'content'),
