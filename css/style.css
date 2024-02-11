@@ -94,6 +94,7 @@
 
 .inspect-ornament::after, .inspect-ornament::before {
   font-family: var(--font-family-mono);
+  font-weight: 100;
   content: '+';
   position: absolute;
   opacity: 0.15;

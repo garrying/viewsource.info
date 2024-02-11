@@ -10,8 +10,10 @@ const inspector = new DomInspector({
 
 inspector.enable()
 
-document.querySelector('#inspect').addEventListener('change', () => {
-  if (!document.querySelector('#inspect').checked) {
+const inspectorSwitch = document.querySelector('#inspect')
+
+inspectorSwitch.addEventListener('change', () => {
+  if (!inspectorSwitch.checked) {
     inspector.disable()
   } else {
     inspector.enable()
