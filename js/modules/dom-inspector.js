@@ -191,6 +191,7 @@
       value: function enable () {
         if (this.destroyed) return exportObj.warn('Inspector instance has been destroyed! Please redeclare it.')
         this.overlay.parent.style.display = 'block'
+        this.overlay.parent.style.opacity = '0'
         this.root.addEventListener('mousemove', this._throttleOnMove, { passive: true })
       }
     }, {
@@ -303,6 +304,8 @@
           width: elementInfo['margin-left'] + borderLevel.width + elementInfo['margin-right'],
           height: elementInfo['margin-top'] + borderLevel.height + elementInfo['margin-bottom']
         }
+
+        this.overlay.parent.style.opacity = '1'
 
         addRule(this.overlay.parent, { width: marginLevel.width + 'px', height: marginLevel.height + 'px', top: elementInfo.top + 'px', left: elementInfo.left + 'px' })
         addRule(this.overlay.content, { width: contentLevel.width + 'px', height: contentLevel.height + 'px', top: elementInfo['margin-top'] + elementInfo['border-top-width'] + elementInfo['padding-top'] + 'px', left: elementInfo['margin-left'] + elementInfo['border-left-width'] + elementInfo['padding-left'] + 'px' })

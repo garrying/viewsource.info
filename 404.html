@@ -17,13 +17,25 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
 </head>
 
-<body class="sans-serif">
-  <h1>404</h1>
-  <div>
-    <input type="checkbox" id="dusk" name="dusk" />
-    <label for="dusk" class="f6">Dusk</label>
-  </div>
-  <script type="text/javascript" src="/js/modules/dom-inspector.js"></script>
+<body class="bg-background">
+  <main class="measure-content center mv7">
+    <h1 class="normal monospace">404</h1>
+    <p class="lh-copy copy-content">Return <a href="/">home</a></p>
+  </main>
+  
+  <aside class="fixed flex-column justify-center items-end monospace bottom-2 right-2 flex f4 inspect-ignore" id="support">
+
+    <div id="taglist" class="monospace tr mb2 flex flex-column items-end f6"></div>
+
+    <div class="flex items-baseline bg-white br-pill pv2 ph3 f7">
+      <div class="mr2">
+        <input type="checkbox" id="inspect" name="inspect" class="v-top" aria-labelledby="inspect-label" checked >
+        <label for="inspect" id="inspect-label">inspect</label>
+      </div>
+      <a class="no-underline ba br-pill ph2 pv1 black" href="https://github.com/garrying/viewsource.info" target="_blank"><em>view source</em> on GitHub</a>
+    </div>
+  </aside>
+  <script src="/js/modules/dom-inspector.js"></script>
   <script type="module" src="/js/app.js"></script>
 </body>
 </html>
