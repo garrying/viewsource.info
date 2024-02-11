@@ -1,4 +1,13 @@
 PORT := 8080
+LINT_BINARY := standard
+PROOFER_BINARY := htmlproofer
+
+GREEN := \033[0;32m
+RESET := \033[0m
+
+# Check if the binary exists
+LINT_BINARY_EXISTS := $(shell command -v $(LINT_BINARY) 2> /dev/null)
+PROOFER_BINARY_EXISTS := $(shell command -v $(PROOFER_BINARY) 2> /dev/null)
 
 all: start
 
@@ -7,13 +16,31 @@ start:
 	@python3 -m http.server $(PORT)
 
 lint:
-	@standard
+ifdef LINT_BINARY_EXISTS
+	@$(LINT_BINARY)
+else
+	@echo "Binary $(GREEN)$(LINT_BINARY)$(RESET) not found. Skipping linting."
+	@echo "🔗 Visit $(GREEN)https://standardjs.com/$(RESET)"
+	@exit 1
+endif
 
 fix:
-	@standard --fix
+ifdef LINT_BINARY_EXISTS
+	@$(LINT_BINARY) --fix
+else
+	@echo "Binary $(GREEN)$(LINT_BINARY)$(RESET) not found. Skipping fixing linting issues."
+	@echo "🔗 Visit $(GREEN)https://standardjs.com/$(RESET)"
+	@exit 1
+endif
 
 check:
-	@htmlproofer .
+ifdef PROOFER_BINARY_EXISTS
+	@$(PROOFER_BINARY) .
+else
+	@echo "Binary $(GREEN)$(PROOFER_BINARY)$(RESET) not found. Skipping HTML proofing."
+	@echo "🔗 Visit $(GREEN)https://github.com/gjtorikian/html-proofer$(RESET)"
+	@exit 1
+endif
 
 help:
 	@echo "Available commands:"
