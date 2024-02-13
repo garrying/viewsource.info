@@ -66,6 +66,10 @@
   font-family: var(--font-family-mono);
 }
 
+.title-content {
+  font-size: clamp(2rem, 2vw, 3vw);
+}
+
 .copy-content {
   font-size: clamp(1rem, 1.5vw, 3vw);
   line-height: 1.45em;
