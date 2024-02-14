@@ -1,39 +1,3 @@
-@font-face {
-  font-family: 'jgs7';
-  src: url('fonts/jgs7.woff2') format('woff2'),
-      url('fonts/jgs7.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'jgs5';
-  src: url('fonts/jgs5.woff2') format('woff2'),
-      url('fonts/jgs5.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'jgs9';
-  src: url('fonts/jgs9.woff2') format('woff2'),
-      url('fonts/jgs9.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'jgs_font';
-  src: url('fonts/jgs_font.woff2') format('woff2'),
-      url('fonts/jgs_font.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   --background: #F0E6D5;
@@ -86,6 +50,11 @@
 
 .element-token {
   background-color: #DBD6C9;
+}
+
+.star {
+  width: 5px;
+  height: 5px;
 }
 
 /* dom inspector */
