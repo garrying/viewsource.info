@@ -49,7 +49,8 @@
 }
 
 .element-token {
-  background-color: #DBD6C9;
+  color: #888376;
+  border: 1px solid #c8c1af;
 }
 
 .star {
