@@ -1,10 +1,10 @@
 :root {
   --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
-  --background: #F0E6D5;
+  --background: #eee8dd;
   --inspector-margin: rgba(146, 146, 146, 0.2);
   --inspector-padding: rgba(192, 192, 192, 0.75);
   --inspector-border: #e3d9c9;
-  --inspector-content: rgba(190, 190, 190, 0.174);
+  --inspector-content: rgba(190, 190, 190, 0.093);
   --inspector-tip: #fff;
   --inspector-tag: #000;
   --inspector-id: #333;
@@ -49,8 +49,26 @@
 }
 
 .element-token {
-  color: #888376;
-  border: 1px solid #c8c1af;
+  color: rgba(146, 146, 146, 0.2);
+  border: 4px solid rgba(146, 146, 146, 0.2);
+}
+
+.element-token:last-child {
+  --element-token-highlight: #000000;
+  color: var(--element-token-highlight);
+  border-color: var(--element-token-highlight);
+  animation: append-animate 130ms ease-in-out;
+}
+
+@keyframes append-animate {
+	from {
+		transform: scale(0.75);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
 }
 
 .star {
