@@ -341,7 +341,7 @@
 
         const newDiv = document.createElement('div')
         newDiv.innerHTML = `&lt;${this.target.tagName.toLowerCase()}&gt;`
-        newDiv.className = 'br-pill py1 ph2 mt2 element-token'
+        newDiv.className = 'py1 ph2 mt1 element-token'
 
         document.querySelector('#taglist').appendChild(newDiv)
       }

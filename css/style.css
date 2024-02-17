@@ -62,7 +62,7 @@
 
 @keyframes append-animate {
 	from {
-		transform: scale(0.75);
+		transform: scale(0.85);
 		opacity: 0;
 	}
 	to {
@@ -123,9 +123,8 @@
 
 .dom-inspector .tips {
   background-color: var(--inspector-tip);
-  padding: 10px 20px;
+  padding: 10px;
   position: fixed;
-  border-radius: 9999px;
   display: none;
 }
 
