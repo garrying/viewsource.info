@@ -56,12 +56,12 @@
   --element-token-highlight: #000000;
   color: var(--element-token-highlight);
   border-color: var(--element-token-highlight);
-  animation: append-animate 130ms ease-in-out;
+  animation: append-animate 120ms ease-in-out;
 }
 
 @keyframes append-animate {
 	from {
-		transform: scale(0.85);
+		transform: scale(0.9);
 		opacity: 0;
 	}
 	to {

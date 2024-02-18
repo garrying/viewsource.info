@@ -1,4 +1,3 @@
-import './modules/button.js'
 import { consoleGraphic } from './modules/console-log.js'
 import './modules/dusk.js'
 
