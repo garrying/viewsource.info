@@ -75,6 +75,11 @@
   height: 5px;
 }
 
+.w-checkbox {
+  width: 22px;
+  height: 22px;
+}
+
 /* dom inspector */
 
 .inspect-ornament {
