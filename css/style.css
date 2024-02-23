@@ -1,11 +1,11 @@
 :root {
   --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
-  --background: #eee8dd;
-  --inspector-margin: rgba(146, 146, 146, 0.2);
-  --inspector-padding: rgba(192, 192, 192, 0.75);
-  --inspector-border: #e3d9c9;
+  --background: #f8f4ed;
+  --inspector-margin: rgba(146, 146, 146, 0.148);
+  --inspector-padding: rgba(146, 146, 146, 0.216);
+  --inspector-border: hsl(39, 35%, 87%);
   --inspector-content: rgba(190, 190, 190, 0.093);
-  --inspector-tip: #fff;
+  --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
   --inspector-id: #333;
   --inspector-class: #444;
@@ -48,6 +48,10 @@
   text-wrap: balance;
 }
 
+.hanging-punctuation {
+  hanging-punctuation: first allow-end last;
+}
+
 .element-token {
   color: rgba(146, 146, 146, 0.2);
 }
@@ -63,10 +67,12 @@
 	from {
 		transform: scale(0.9);
 		opacity: 0;
+    max-height: 0;
 	}
 	to {
 		transform: scale(1);
-		opacity: 1;	
+		opacity: 1;
+    max-height: 1em;
 	}
 }
 
@@ -76,8 +82,8 @@
 }
 
 .w-checkbox {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
 }
 
 /* dom inspector */
@@ -141,7 +147,6 @@
 }
 
 .dom-inspector .tips .tag {
-  font-weight: bold;
   color: var(--inspector-tag);
 }
 
