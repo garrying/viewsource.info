@@ -1,41 +1,81 @@
-<!doctype html>
+<!--
+  a view source web
+  Garry Ing
+
+  issue 03, spring 2024, the html review
+-->
+
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404</title>
+    <link rel="stylesheet" href="/css/vendor/tachyons.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404</title>
-  <link rel="stylesheet" href="/css/vendor/tachyons.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <meta name="description" content="">
+    <meta property="og:title" content="a view source web" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://viewsource.info" />
+    <meta
+      property="og:image"
+      content="https://viewsource.info/img/preview.png"
+    />
+    <meta
+      property="og:description"
+      content="issue 03, spring 2024, the html review"
+    />
+    <meta name="description" content="issue 03, spring 2024, the html review" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://viewsource.info" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+  </head>
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-</head>
+  <body class="bg-background">
+    <main class="measure-content center mv7">
+      <h1 class="normal monospace">404</h1>
+      <p class="lh-copy copy-content">Return <a href="/">home</a></p>
+    </main>
 
-<body class="bg-background">
-  <main class="measure-content center mv7">
-    <h1 class="normal monospace">404</h1>
-    <p class="lh-copy copy-content">Return <a href="/">home</a></p>
-  </main>
-  
-  <aside class="fixed flex-column justify-center items-end monospace bottom-2 right-2 flex f4 inspect-ignore" id="support">
+    <aside
+      class="fixed flex-column justify-center items-end monospace bottom-2 right-2 flex f4 inspect-ignore"
+      id="support"
+    >
+      <div id="taglist" class="tr mb2 flex flex-column items-end f4"></div>
 
-    <div id="taglist" class="tr mb2 flex flex-column items-end f6"></div>
-
-    <div class="flex items-baseline bg-white pv2 ph3 f7">
-      <div class="mr2">
-        <input type="checkbox" id="inspect" name="inspect" class="v-top" aria-labelledby="inspect-label" checked >
-        <label for="inspect" id="inspect-label">inspect</label>
+      <div id="inspect-controls" class="flex items-baseline pv2 ph3 f7">
+        <div class="mr2">
+          <input
+            type="checkbox"
+            id="inspect"
+            name="inspect"
+            class="v-mid w-checkbox"
+            aria-labelledby="inspect-label"
+            checked
+          />
+          <label for="inspect" id="inspect-label">inspect</label>
+        </div>
+        <div class="mr2">
+          <input
+            type="checkbox"
+            id="dusk"
+            name="dusk"
+            class="v-mid w-checkbox"
+            aria-labelledby="dusk-label"
+          />
+          <label for="dusk" id="dusk-label">dusk</label>
+        </div>
+        <a
+          class="no-underline ba ph2 pv1 black dim"
+          href="https://github.com/garrying/viewsource.info"
+          target="_blank"
+          ><em>view source ↗</em></a
+        >
       </div>
-      <a class="no-underline ba ph2 pv1 black" href="https://github.com/garrying/viewsource.info" target="_blank"><em>view source ↗</em></a>
-    </div>
-  </aside>
-  <script src="/js/modules/dom-inspector.js"></script>
-  <script type="module" src="/js/main.js"></script>
-</body>
+    </aside>
+
+    <script src="/js/modules/dom-inspector.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
 </html>
