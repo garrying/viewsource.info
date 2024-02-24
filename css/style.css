@@ -1,9 +1,10 @@
 :root {
   --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   --background: #f8f4ed;
+  --background-dusk: #0f0f0f;
   --inspector-margin: rgba(146, 146, 146, 0.148);
   --inspector-padding: rgba(146, 146, 146, 0.216);
-  --inspector-border: hsl(39, 35%, 87%);
+  --inspector-border: rgba(233, 233, 233, 0.555);
   --inspector-content: rgba(190, 190, 190, 0.093);
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
@@ -24,6 +25,14 @@
 
 .bg-background {
   background-color: var(--background);
+}
+
+.bg-background-dusk {
+  background-color: var(--background-dusk);
+}
+
+.bg-background-dusk img {
+  filter: invert(1);
 }
 
 .monospace {
@@ -61,6 +70,10 @@
   color: var(--element-token-highlight);
   border-color: var(--element-token-highlight);
   animation: append-animate 120ms ease-in-out;
+}
+
+.bg-background-dusk .element-token:last-child {
+  color: #fff;
 }
 
 @keyframes append-animate {

@@ -1,6 +1,6 @@
 const el = document.querySelector('body')
 const button = document.querySelector('#dusk')
-const duskClass = ['bg-near-black', 'moon-gray']
+const duskClass = ['bg-background-dusk', 'moon-gray']
 const localVar = 'duskMode'
 
 const starField = (apply) => {

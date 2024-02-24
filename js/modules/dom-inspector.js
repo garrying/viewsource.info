@@ -181,7 +181,7 @@
       this.maxZIndex = options.maxZIndex || getMaxZIndex() + 1
 
       this._cachedTarget = ''
-      this._throttleOnMove = throttle(this._onMove.bind(this), 20)
+      this._throttleOnMove = throttle(this._onMove.bind(this), 130)
 
       this._init()
     }
