@@ -13,6 +13,16 @@
   --inspector-size: #000;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .subpixel-antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,7 +50,7 @@
 }
 
 .title-content {
-  font-size: clamp(2rem, 2vw, 3vw);
+  font-size: clamp(1.9rem, 2vw, 3vw);
 }
 
 .copy-content {
@@ -53,12 +63,24 @@
   min-width: 400px;
 }
 
+@media (max-width: 400px) {
+  .measure-content {
+    padding: 0 2em;
+    min-width: 100vw;
+  }
+}
+
 .balanced {
   text-wrap: balance;
 }
 
+
 .hanging-punctuation {
   hanging-punctuation: first allow-end last;
+}
+
+.word-wrap {
+  word-break: break-all;
 }
 
 .element-token {
@@ -101,10 +123,14 @@
 
 /* dom inspector */
 
+#inspect-controls {
+  background-color: var(--background);
+}
+
 .inspect-ornament {
   left: 0;
   right: 0;
-  pointer-events: none;;
+  pointer-events: none;
 }
 
 .inspect-ornament::after, .inspect-ornament::before {
