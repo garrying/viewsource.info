@@ -11,6 +11,8 @@
   --inspector-id: #333;
   --inspector-class: #444;
   --inspector-size: #000;
+
+  --breakpoint-large: 60em;
 }
 
 html {
@@ -23,9 +25,25 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+hr {
+  border-width: 4px;
+  border-color: var(--inspector-border);
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 1rem;
+  border-left: 1px solid rgb(0 0 0 / 40%);
+  hanging-punctuation: first allow-end last;
+}
+
 .subpixel-antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.reference {
+  margin-bottom: 1rem;
 }
 
 .reference:target,
@@ -74,11 +92,6 @@ body {
   text-wrap: balance;
 }
 
-
-.hanging-punctuation {
-  hanging-punctuation: first allow-end last;
-}
-
 .word-wrap {
   word-break: break-all;
 }
@@ -123,7 +136,12 @@ body {
 
 /* dom inspector */
 
+#support {
+  pointer-events: none;
+}
+
 #inspect-controls {
+  pointer-events: auto;
   background-color: var(--background);
 }
 
