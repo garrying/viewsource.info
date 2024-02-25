@@ -9,9 +9,8 @@
   --inspector-content: rgba(190, 190, 190, 0.093);
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
-  --inspector-id: #333;
-  --inspector-class: #444;
   --inspector-size: #000;
+  --token-name: #a88b6b;
 
   --breakpoint-large: 60em;
   --breakpoint-not-small: 30em;
@@ -313,6 +312,10 @@ textarea {
   color: rgba(146, 146, 146, 0.2);
 }
 
+.token-name {
+  color: var(--token-name);
+}
+
 .element-token:last-child {
   --element-token-highlight: #000000;
   color: var(--element-token-highlight);
@@ -393,6 +396,9 @@ textarea {
 }
 
 .dom-inspector .tips {
+  font-family: var(--font-family-mono);
+  color: var(--inspector-tag);
+  font-size: 12px;
   background-color: var(--inspector-tip);
   padding: 10px;
   position: fixed;
@@ -402,21 +408,8 @@ textarea {
 .dom-inspector .tips > div {
   display: inline-block;
   vertical-align: middle;
-  font-size: 12px;
   font-family: var(--font-family-mono);
   overflow: auto;
-}
-
-.dom-inspector .tips .tag {
-  color: var(--inspector-tag);
-}
-
-.dom-inspector .tips .id {
-  color: var(--inspector-id);
-}
-
-.dom-inspector .tips .class {
-  color: var(--inspector-class);
 }
 
 .dom-inspector .tips .size {
