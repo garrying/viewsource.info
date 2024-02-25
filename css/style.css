@@ -1,5 +1,6 @@
 :root {
-  --font-family-mono: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  --font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+    Liberation Mono, monospace;
   --background: #f8f4ed;
   --background-dusk: #0f0f0f;
   --inspector-margin: rgba(146, 146, 146, 0.148);
@@ -37,7 +38,7 @@ body {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 a {
@@ -59,7 +60,8 @@ blockquote {
   hanging-punctuation: first allow-end last;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -67,7 +69,7 @@ sub, sup {
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 img {
@@ -76,7 +78,7 @@ img {
 }
 
 details {
-  display: block
+  display: block;
 }
 
 summary {
@@ -84,14 +86,19 @@ summary {
   display: list-item;
 }
 
-button,input,optgroup,select,textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0
+  margin: 0;
 }
 
-[type=checkbox],[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -202,22 +209,22 @@ button,input,optgroup,select,textarea {
 }
 
 @keyframes append-animate {
-	from {
-		transform: scale(0.9);
-		opacity: 0;
+  from {
+    transform: scale(0.9);
+    opacity: 0;
     max-height: 0;
-	}
-	to {
-		transform: scale(1);
-		opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
     max-height: 1em;
-	}
+  }
 }
 
 .star {
   position: absolute;
   background-color: #fff;
-  border-radius: 100%;;
+  border-radius: 100%;
   width: 5px;
   height: 5px;
 }
@@ -333,7 +340,7 @@ button,input,optgroup,select,textarea {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #inspect-controls {
@@ -350,10 +357,11 @@ button,input,optgroup,select,textarea {
   pointer-events: none;
 }
 
-.inspect-ornament::after, .inspect-ornament::before {
+.inspect-ornament::after,
+.inspect-ornament::before {
   font-family: var(--font-family-mono);
   font-weight: 100;
-  content: '+';
+  content: "+";
   position: absolute;
   opacity: 0.15;
   top: -1em;
@@ -383,7 +391,7 @@ button,input,optgroup,select,textarea {
   outline-width: 5px;
 }
 
-.dom-inspector>div {
+.dom-inspector > div {
   position: absolute;
 }
 
@@ -394,7 +402,7 @@ button,input,optgroup,select,textarea {
   display: none;
 }
 
-.dom-inspector .tips>div {
+.dom-inspector .tips > div {
   display: inline-block;
   vertical-align: middle;
   font-size: 12px;
