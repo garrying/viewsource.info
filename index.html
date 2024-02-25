@@ -11,7 +11,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>a view source web</title>
-    <link rel="stylesheet" href="/css/vendor/tachyons.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
     <meta property="og:title" content="a view source web" />
@@ -35,11 +34,11 @@
   <body class="bg-background">
     <main>
       <article>
-        <header class="relative" id="title-content">
-          <div class="measure-content center">
+        <header id="title-content">
+          <div class="measure-content">
             <div class="pv5">
               <img
-                class="w-80-ns h-auto center db"
+                id="title-image"
                 src="/img/landscape.png"
                 alt="A patent drawing of a landscape with url tags"
                 width="1200"
@@ -58,7 +57,7 @@
             </div>
           </div>
         </header>
-        <div class="measure-content center">
+        <div class="measure-content">
           <p class="lh-copy copy-content">
             In the Fall of 2000, after the panic of the Y2K scare and the
             collapsing dot-com bubble, I sat in front of a Macintosh desktop
@@ -362,7 +361,7 @@
         </div>
       </article>
     </main>
-    <aside class="measure-content center">
+    <aside class="measure-content">
       <hr />
 
       <h3 class="normal">Notes</h3>
@@ -497,7 +496,7 @@
       </ol>
 
       <details class="mv5 lh-copy">
-        <summary class="pointer">Colophon</summary>
+        <summary>Colophon</summary>
         <p>
           Created by
           <a href="https://garrying.com" rel="author" target="_blank"
@@ -523,12 +522,12 @@
     </aside>
 
     <aside
-      class="fixed flex-column justify-center items-end monospace bottom-2 right-2 flex f4 inspect-ignore"
+      class="f4 inspect-ignore"
       id="support"
     >
-      <div id="taglist" class="tr mb2 flex flex-column items-end f4"></div>
+      <div id="taglist" class="f4"></div>
 
-      <div id="inspect-controls" class="flex items-baseline pv2 ph3 f7">
+      <div id="inspect-controls" class="f7">
         <div class="mr2">
           <input
             type="checkbox"
@@ -551,7 +550,7 @@
           <label for="dusk" id="dusk-label">dusk</label>
         </div>
         <a
-          class="no-underline ba ph2 pv1 black dim"
+          class="button-link"
           href="https://github.com/garrying/viewsource.info"
           target="_blank"
           ><em>view source ↗</em></a
