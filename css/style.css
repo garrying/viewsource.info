@@ -79,6 +79,7 @@ img {
 
 details {
   display: block;
+  line-height: 1.45;
 }
 
 summary {
@@ -159,7 +160,7 @@ textarea {
 
 .copy-content {
   font-size: clamp(1rem, 1.5vw, 3vw);
-  line-height: 1.45em;
+  line-height: 1.5em;
 }
 
 .measure-content {
@@ -178,10 +179,6 @@ textarea {
 
 .lh-solid {
   line-height: 1;
-}
-
-.lh-copy {
-  line-height: 1.5;
 }
 
 .f4 {
