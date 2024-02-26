@@ -250,7 +250,7 @@
           marginRight: this._createSurroundEle(parent, 'margin margin-right'),
           marginBottom: this._createSurroundEle(parent, 'margin margin-bottom'),
           marginLeft: this._createSurroundEle(parent, 'margin margin-left'),
-          tips: this._createSurroundEle(parent, 'tips', '<div class="tag"></div><div class="id"></div><div class="class"></div><div class="href"></div><div>&gt;</div><div class="size"></div>')
+          tips: this._createSurroundEle(parent, 'tips', '&lt;<div class="tag"></div><div class="id"></div><div class="class"></div><div class="href"></div><div>&gt;</div><div class="size"></div>')
         }
 
         this.root.appendChild(parent)
@@ -324,7 +324,7 @@
 
         const classes = [].concat(toConsumableArray(this.target.classList)).map(String).join(' ')
 
-        $('.tag', this.overlay.tips).innerHTML = `&lt;${this.target.tagName.toLowerCase()}`
+        $('.tag', this.overlay.tips).innerHTML = this.target.tagName.toLowerCase()
         $('.id', this.overlay.tips).innerHTML = this.target.id ? `&nbsp;id="<span class="token-name">${this.target.id}</span>"` : ''
         $('.href', this.overlay.tips).innerHTML = this.target.href ? `&nbsp;href="<span class="token-name">${this.target.href}</span>"` : ''
         $('.class', this.overlay.tips).innerHTML = classes ? `&nbsp;class="<span class="token-name">${[].concat(toConsumableArray(this.target.classList)).map(String).join(' ')}</span>"` : ''
