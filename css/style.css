@@ -9,7 +9,6 @@
   --inspector-content: rgba(190, 190, 190, 0.093);
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
-  --inspector-size: #000;
   --token-name: #a88b6b;
 
   --breakpoint-large: 60em;
@@ -143,7 +142,7 @@ textarea {
 
 .title-content {
   position: relative;
-  font-size: clamp(1.9rem, 2vw, 3vw);
+  font-size: clamp(2rem, 2vw, 3vw);
 }
 
 #title-image {
@@ -414,21 +413,20 @@ textarea {
 
 .dom-inspector .tips .size {
   margin-left: 1em;
-  color: var(--inspector-size);
 }
 
-.inspector .margin {
+.dom-inspector-theme-default .margin {
   background-color: var(--inspector-margin);
 }
 
-.inspector .border {
+.dom-inspector-theme-default .border {
   background-color: var(--inspector-border);
 }
 
-.inspector .padding {
+.dom-inspector-theme-default .padding {
   background-color: var(--inspector-padding);
 }
 
-.inspector .content {
+.dom-inspector-theme-default .content {
   background-color: var(--inspector-content);
 }

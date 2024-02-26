@@ -1,10 +1,10 @@
 import { consoleGraphic } from './modules/console-log.js'
 import './modules/dusk.js'
+const mediaQuery = window.matchMedia('(max-width: 480px)');
 
 const inspector = new DomInspector({
   root: 'body',
   exclude: ['body', '.inspect-ignore'],
-  theme: 'inspector'
 })
 
 inspector.enable()
@@ -18,5 +18,10 @@ inspectorSwitch.addEventListener('change', () => {
     inspector.enable()
   }
 })
+
+if (mediaQuery.matches) {
+  inspectorSwitch.checked = false
+  inspector.disable()
+}
 
 consoleGraphic()

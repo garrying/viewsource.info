@@ -328,7 +328,7 @@
         $('.id', this.overlay.tips).innerHTML = this.target.id ? `&nbsp;id="<span class="token-name">${this.target.id}</span>"` : ''
         $('.href', this.overlay.tips).innerHTML = this.target.href ? `&nbsp;href="<span class="token-name">${this.target.href}</span>"` : ''
         $('.class', this.overlay.tips).innerHTML = classes ? `&nbsp;class="<span class="token-name">${[].concat(toConsumableArray(this.target.classList)).map(String).join(' ')}</span>"` : ''
-        $('.size', this.overlay.tips).innerHTML = marginLevel.width + '×' + marginLevel.height
+        $('.size', this.overlay.tips).innerHTML = Math.round(marginLevel.width) + ' &times; ' + Math.round(marginLevel.height)
 
         let tipsTop = 0
         if (elementInfo.top >= 42 + 8) {
