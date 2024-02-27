@@ -58,6 +58,14 @@ blockquote {
   hanging-punctuation: first allow-end last;
 }
 
+@media (max-width: 30em) {
+  blockquote {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-color: rgb(0 0 0 / 20%);
+  }
+}
+
 sub,
 sup {
   font-size: 75%;
@@ -334,6 +342,13 @@ textarea {
   right: 2rem;
 }
 
+@media (max-width: 30em) {
+  #support {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
 #taglist {
   display: flex;
   flex-direction: column;
@@ -402,6 +417,8 @@ textarea {
   padding: 10px;
   position: fixed;
   display: none;
+  box-shadow: 0 0 7rem 0rem #f5fead;
+  border-radius: 9999px;
 }
 
 .dom-inspector .tips > div {
