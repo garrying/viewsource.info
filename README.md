@@ -1,7 +1,5 @@
 # viewsource.info
 
-issue 03, spring 2024, [the html review](https://thehtml.review/)
-
 ## Localhost development
 
 Requires `python3` to run locally. [JavaScript Standard Style](https://standardjs.com/) required for `make lint` and `make fix`.
