@@ -11,6 +11,8 @@
   --inspector-tag: #000;
   --token-name: #a88b6b;
 
+  --input-accent: #000;
+
   --breakpoint-large: 60em;
   --breakpoint-not-small: 30em;
 }
@@ -261,6 +263,7 @@ textarea {
   vertical-align: middle;
   width: 16px;
   height: 16px;
+  accent-color: var(--input-accent);
 }
 
 /* button link */
