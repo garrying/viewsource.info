@@ -12,7 +12,7 @@ const starField = (apply) => {
       const randomTop = Math.floor(Math.random() * 95)
 
       const newDiv = document.createElement('div')
-      newDiv.className = 'star absolute bg-white br-100'
+      newDiv.className = 'star bg-white br-100'
       newDiv.style.left = randomLeft + '%'
       newDiv.style.top = randomTop + '%'
 

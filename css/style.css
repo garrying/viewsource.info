@@ -2,7 +2,7 @@
   --font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
     Liberation Mono, monospace;
   --background: #f8f4ed;
-  --background-dusk: #0f0f0f;
+  --background-dusk: #1d1d1d;
   --inspector-margin: rgba(146, 146, 146, 0.148);
   --inspector-padding: rgba(146, 146, 146, 0.216);
   --inspector-border: rgba(233, 233, 233, 0.555);
@@ -13,6 +13,36 @@
 
   --breakpoint-large: 60em;
   --breakpoint-not-small: 30em;
+}
+
+.bg-background-dusk {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --token-name: #f29766;
+  --inspector-tip: #0f0f0ff5;
+  --inspector-margin: rgba(146, 146, 146, 0.148);
+  --inspector-padding: rgba(146, 146, 146, 0.216);
+  --inspector-border: rgba(233, 233, 233, 0.151);
+  --inspector-content: rgba(190, 190, 190, 0.027);
+}
+
+.bg-background-dusk a {
+  color: #fff;
+}
+
+.bg-background-dusk a:hover,
+.bg-background-dusk a:focus {
+  opacity: 0.5;
+}
+
+.bg-background-dusk a:active {
+  opacity: 0.8;
+}
+
+.bg-background-dusk .reference:target,
+.bg-background-dusk .footnote:target {
+  background-color: #f29766b5;
+  color: #fff;
 }
 
 *,
@@ -108,11 +138,6 @@ textarea {
 [type="radio"] {
   box-sizing: border-box;
   padding: 0;
-}
-
-.subpixel-antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .reference {
@@ -238,11 +263,6 @@ textarea {
   height: 16px;
 }
 
-.ba {
-  border-style: solid;
-  border-width: 1px;
-}
-
 /* button link */
 
 .button-link {
@@ -255,6 +275,11 @@ textarea {
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.bg-background-dusk .button-link {
+  color: #fff;
+  border-color: #fff;
 }
 
 .button-link,
@@ -326,7 +351,6 @@ textarea {
 .element-token:last-child {
   --element-token-highlight: #000000;
   color: var(--element-token-highlight);
-  border-color: var(--element-token-highlight);
   animation: append-animate 120ms ease-in-out;
 }
 
@@ -363,6 +387,10 @@ textarea {
   padding: 0.5rem 1rem;
   pointer-events: auto;
   background-color: var(--background);
+}
+
+.bg-background-dusk #inspect-controls {
+  background-color: var(--background-dusk);
 }
 
 .inspect-ornament {
@@ -417,8 +445,13 @@ textarea {
   padding: 10px;
   position: fixed;
   display: none;
-  box-shadow: 0 0 7rem 0rem #f5fead;
+  box-shadow: 0 0 2rem 0rem #e7e3dd;
   border-radius: 9999px;
+}
+
+.bg-background-dusk .dom-inspector .tips {
+  color: #fff;
+  box-shadow: 0 0 2rem 0rem #151515;
 }
 
 .dom-inspector .tips > div {
@@ -430,6 +463,7 @@ textarea {
 
 .dom-inspector .tips .size {
   margin-left: 1em;
+  opacity: 0.5;
 }
 
 .dom-inspector-theme-default .margin {
