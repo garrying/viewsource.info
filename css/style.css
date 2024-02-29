@@ -1,8 +1,9 @@
 :root {
   --font-family-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
     Liberation Mono, monospace;
+  --text-color: #2d2723;
   --background: #f8f4ed;
-  --background-dusk: #1d1d1d;
+  --background-dusk: #1c1917;
   --inspector-margin: rgba(146, 146, 146, 0.148);
   --inspector-padding: rgba(146, 146, 146, 0.216);
   --inspector-border: rgba(233, 233, 233, 0.555);
@@ -11,6 +12,7 @@
   --inspector-tag: #000;
   --token-name: #9c611f;
   --input-accent: #000;
+  --blockquote-border: 0 0 0;
 }
 
 /* dusk mode styles */
@@ -20,11 +22,12 @@
   -moz-osx-font-smoothing: grayscale;
   --token-name: #f29766;
   --inspector-tip: #0f0f0ff5;
-  --inspector-margin: rgba(146, 146, 146, 0.148);
+  --inspector-margin: rgba(146, 146, 146, 0.118);
   --inspector-padding: rgba(146, 146, 146, 0.216);
   --inspector-border: rgba(233, 233, 233, 0.151);
   --inspector-content: rgba(190, 190, 190, 0.027);
-  color: #ccc;
+  --text-color: #ccc;
+  --blockquote-border: 255 255 255;
 }
 
 .bg-background-dusk a {
@@ -64,6 +67,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  color: var(--text-color);
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -88,15 +92,16 @@ hr {
 blockquote {
   font-style: italic;
   padding-left: 1rem;
-  border-left: 1px solid rgb(0 0 0 / 40%);
+  border-left: 1px solid rgb(var(--blockquote-border) / 40%);
   hanging-punctuation: first allow-end last;
 }
+
 
 @media (max-width: 30em) {
   blockquote {
     margin-left: 1rem;
     margin-right: 1rem;
-    border-color: rgb(0 0 0 / 20%);
+    border-color: rgb(var(--blockquote-border) / 20%);
   }
 }
 
