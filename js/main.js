@@ -1,10 +1,10 @@
 import { consoleGraphic } from './modules/console-log.js'
 import './modules/dusk.js'
-const mediaQuery = window.matchMedia('(max-width: 480px)');
+const mediaQuery = window.matchMedia('(max-width: 480px)')
 
 const inspector = new DomInspector({
   root: 'body',
-  exclude: ['body', '.inspect-ignore'],
+  exclude: ['body', '.inspect-ignore']
 })
 
 inspector.enable()

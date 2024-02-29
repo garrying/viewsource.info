@@ -1,7 +1,7 @@
 export const consoleGraphic = () => {
   if (
-    typeof console !== "undefined" &&
-    typeof console.log === "function" &&
+    typeof console !== 'undefined' &&
+    typeof console.log === 'function' &&
     !window.test
   ) {
     console.log(
@@ -39,25 +39,25 @@ export const consoleGraphic = () => {
     its development and earlier tools like Aardvark and Venkman at 
     https://thehistoryoftheweb.com/checking-under-the-hood-of-code/
     `,
-      "color:#4d5eff",
-      "color:#5363ff",
-      "color:#5969ff",
-      "color:#5f6eff",
-      "color:#6574ff",
-      "color:#6b79ff",
-      "color:#717eff",
-      "color:#7784ff",
-      "color:#7d89ff",
-      "color:#838fff",
-      "color:#8894ff",
-      "color:#8e99ff",
-      "color:#949fff",
-      "color:#9aa4ff",
-      "color:#a0aaff",
-      "color:#a6afff",
-      "color:#acb4ff",
-      "color:#b2baff",
-      "color:#b8bfff"
-    );
+      'color:#4d5eff',
+      'color:#5363ff',
+      'color:#5969ff',
+      'color:#5f6eff',
+      'color:#6574ff',
+      'color:#6b79ff',
+      'color:#717eff',
+      'color:#7784ff',
+      'color:#7d89ff',
+      'color:#838fff',
+      'color:#8894ff',
+      'color:#8e99ff',
+      'color:#949fff',
+      'color:#9aa4ff',
+      'color:#a0aaff',
+      'color:#a6afff',
+      'color:#acb4ff',
+      'color:#b2baff',
+      'color:#b8bfff'
+    )
   }
-};
+}
