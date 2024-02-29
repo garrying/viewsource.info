@@ -1,5 +1,6 @@
 const el = document.querySelector('body')
 const button = document.querySelector('#dusk')
+const titleImage = document.querySelector('#title-image')
 const duskClass = ['bg-background-dusk']
 const localVar = 'duskMode'
 
@@ -45,8 +46,8 @@ if (button) {
   button.addEventListener('change', duskModeToggle)
 }
 
-if (document.querySelector('#title-image')) {
-  document.querySelector('#title-image').addEventListener('click', () => {
+if (titleImage) {
+  titleImage.addEventListener('click', () => {
     if (button.checked !== true) {
       button.checked = true
       duskModeToggle()
