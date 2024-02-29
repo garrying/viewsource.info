@@ -9,7 +9,7 @@
   --inspector-content: rgba(190, 190, 190, 0.093);
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
-  --token-name: #a88b6b;
+  --token-name: #9c611f;
 
   --input-accent: #000;
 
@@ -142,6 +142,10 @@ textarea {
   padding: 0;
 }
 
+.i {
+  font-style: italic;
+}
+
 .reference {
   margin-bottom: 1rem;
 }
@@ -255,8 +259,8 @@ textarea {
   position: absolute;
   background-color: #fff;
   border-radius: 100%;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 }
 
 .w-checkbox {
@@ -389,7 +393,8 @@ textarea {
   align-items: baseline;
   padding: 0.5rem 1rem;
   pointer-events: auto;
-  background-color: var(--background);
+  background-color: var(--inspector-tip);
+
 }
 
 .bg-background-dusk #inspect-controls {
@@ -466,7 +471,7 @@ textarea {
 
 .dom-inspector .tips .size {
   margin-left: 1em;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .dom-inspector-theme-default .margin {
