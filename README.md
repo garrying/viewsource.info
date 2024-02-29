@@ -2,7 +2,7 @@
 
 ## Localhost development
 
-Requires `python3` to run locally. [JavaScript Standard Style](https://standardjs.com/) required for `make lint` and `make fix`.
+Requires `python3` to run locally.
 
 1. Clone repository: `git clone git@github.com:garrying/viewsource.info.git`
 2. Run locally: `make` or `make start`
