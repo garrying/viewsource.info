@@ -17,6 +17,8 @@
   --breakpoint-not-small: 30em;
 }
 
+/* dusk mode styles */
+
 .bg-background-dusk {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,6 +28,7 @@
   --inspector-padding: rgba(146, 146, 146, 0.216);
   --inspector-border: rgba(233, 233, 233, 0.151);
   --inspector-content: rgba(190, 190, 190, 0.027);
+  color: #ccc;
 }
 
 .bg-background-dusk a {
@@ -46,6 +49,9 @@
   background-color: #f29766b5;
   color: #fff;
 }
+
+
+/* global elements */
 
 *,
 *::before,
@@ -142,9 +148,7 @@ textarea {
   padding: 0;
 }
 
-.i {
-  font-style: italic;
-}
+/* footnote styles */
 
 .reference {
   margin-bottom: 1rem;
@@ -157,6 +161,7 @@ textarea {
 
 .bg-background {
   background-color: var(--background);
+  transition: background-color 120ms ease-in-out;
 }
 
 .bg-background-dusk {
@@ -167,12 +172,12 @@ textarea {
   filter: invert(1);
 }
 
-.moon-gray {
-  color: #ccc;
-}
-
 .normal {
   font-weight: 400;
+}
+
+.i {
+  font-style: italic;
 }
 
 .monospace {
@@ -218,16 +223,14 @@ textarea {
   line-height: 1;
 }
 
+/* typography helpers */
+
 .f4 {
   font-size: 1.25rem;
 }
 
 .f5 {
   font-size: 1rem;
-}
-
-.f7 {
-  font-size: 0.75rem;
 }
 
 .balanced {
@@ -242,6 +245,8 @@ textarea {
   color: #fff;
 }
 
+/* animate the tag entering with the inspector */
+
 @keyframes append-animate {
   from {
     transform: scale(0.9);
@@ -254,6 +259,8 @@ textarea {
     max-height: 1em;
   }
 }
+
+/* dusk stars */
 
 .star {
   position: absolute;
@@ -389,12 +396,13 @@ textarea {
 }
 
 #inspect-controls {
+  font-size: 0.75rem;
   display: flex;
   align-items: baseline;
   padding: 0.5rem 1rem;
   pointer-events: auto;
   background-color: var(--inspector-tip);
-
+  transition: background-color 120ms ease-in-out;
 }
 
 .bg-background-dusk #inspect-controls {
@@ -454,7 +462,6 @@ textarea {
   position: fixed;
   display: none;
   box-shadow: 0 0 2rem 0rem #e7e3dd;
-  border-radius: 9999px;
 }
 
 .bg-background-dusk .dom-inspector .tips {

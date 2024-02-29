@@ -1,6 +1,6 @@
 const el = document.querySelector('body')
 const button = document.querySelector('#dusk')
-const duskClass = ['bg-background-dusk', 'moon-gray']
+const duskClass = ['bg-background-dusk']
 const localVar = 'duskMode'
 
 const starField = (apply) => {
@@ -44,3 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
 if (button) {
   button.addEventListener('change', duskModeToggle)
 }
+
+document.querySelector('#title-image').addEventListener('click', () => {
+  if (button.checked !== true) {
+    button.checked = true
+    duskModeToggle()
+  } else {
+    button.checked = false
+    duskModeToggle()
+  }
+})
