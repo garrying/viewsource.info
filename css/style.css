@@ -10,11 +10,7 @@
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
   --token-name: #9c611f;
-
   --input-accent: #000;
-
-  --breakpoint-large: 60em;
-  --breakpoint-not-small: 30em;
 }
 
 /* dusk mode styles */
