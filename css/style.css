@@ -186,7 +186,13 @@ textarea {
 
 .title-content {
   position: relative;
-  font-size: clamp(1.95rem, 2vw, 3vw);
+  font-size: clamp(2rem, 2vw, 3vw);
+}
+
+@media (max-width: 30em) {
+  .title-content {
+    font-size: 1.9rem;
+  }
 }
 
 #title-image {
