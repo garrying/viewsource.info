@@ -45,12 +45,15 @@ if (button) {
   button.addEventListener('change', duskModeToggle)
 }
 
-document.querySelector('#title-image').addEventListener('click', () => {
-  if (button.checked !== true) {
-    button.checked = true
-    duskModeToggle()
-  } else {
-    button.checked = false
-    duskModeToggle()
-  }
-})
+if (document.querySelector('#title-image')) {
+  document.querySelector('#title-image').addEventListener('click', () => {
+    if (button.checked !== true) {
+      button.checked = true
+      duskModeToggle()
+    } else {
+      button.checked = false
+      duskModeToggle()
+    }
+  })
+}
+
