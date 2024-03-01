@@ -42,12 +42,6 @@
       return obj && typeof Symbol === 'function' && obj.constructor === Symbol && obj !== Symbol.prototype ? 'symbol' : typeof obj
     }
 
-  const classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError('Cannot call a class as a function')
-    }
-  }
-
   const createClass = (function () {
     function defineProperties (target, props) {
       for (let i = 0; i < props.length; i++) {
@@ -160,7 +154,6 @@
   const DomInspector = (function () {
     function DomInspector () {
       const options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {}
-      classCallCheck(this, DomInspector)
 
       this._doc = window.document
 
