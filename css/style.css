@@ -272,7 +272,7 @@ textarea {
 .star {
   position: absolute;
   background-color: #fff;
-  border-radius: 100%;
+  transform: rotate(45deg);
   width: 4px;
   height: 4px;
 }
