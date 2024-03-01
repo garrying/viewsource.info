@@ -93,7 +93,7 @@ hr {
 blockquote {
   font-style: italic;
   padding-left: 1rem;
-  border-left: 1px solid rgb(var(--blockquote-border) / 40%);
+  border-left: 2px dotted rgb(var(--blockquote-border) / 40%);
   hanging-punctuation: first allow-end last;
 }
 
