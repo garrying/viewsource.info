@@ -1,8 +1,6 @@
 # viewsource.info
 
-## Localhost development
-
-Requires `python3` to run locally.
+Run locally with `python3`.
 
 1. Clone repository: `git clone git@github.com:garrying/viewsource.info.git`
 2. Run locally: `make` or `make start`
