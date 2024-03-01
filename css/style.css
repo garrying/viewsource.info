@@ -79,6 +79,7 @@ h1 {
 
 a {
   background-color: transparent;
+  text-decoration: underline dotted;
 }
 
 hr {
