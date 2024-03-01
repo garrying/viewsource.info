@@ -218,7 +218,7 @@
     }, {
       key: 'getElementInfo',
       value: function getElementInfo (ele) {
-        if (!isDOM(ele) && !this.target) return exportObj.warn('Target element is not found. Warning function name:%c getElementInfo', 'color: #ff5151')
+        if (!isDOM(ele) && !this.target) return exportObj.warn('Target element is not found')
         return getElementInfo$1(ele || this.target)
       }
     }, {
