@@ -34,13 +34,11 @@ const duskModeToggle = () => {
   starField(button.checked)
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.localStorage.getItem(localVar) === 'true') {
-    starField(true)
-    duskClass.map(v => el.classList.add(v))
-    button.checked = true
-  }
-})
+if (window.localStorage.getItem(localVar) === 'true') {
+  starField(true)
+  duskClass.map(v => el.classList.add(v))
+  button.checked = true
+}
 
 if (button) {
   button.addEventListener('change', duskModeToggle)
@@ -50,11 +48,10 @@ if (titleImage) {
   titleImage.addEventListener('click', () => {
     if (button.checked !== true) {
       button.checked = true
-      duskModeToggle()
     } else {
       button.checked = false
-      duskModeToggle()
     }
+    duskModeToggle()
   })
 }
 
