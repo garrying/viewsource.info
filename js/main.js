@@ -11,7 +11,13 @@ inspector.enable()
 
 const inspectorSwitch = document.querySelector('#inspect')
 
-inspectorSwitch.addEventListener('change', !inspectorSwitch.checked ? inspector.disable() : inspector.enable())
+inspectorSwitch.addEventListener('change', () => {
+  if (!inspectorSwitch.checked) {
+    inspector.disable()
+  } else {
+    inspector.enable()
+  }
+})
 
 if (mediaQuery.matches) {
   inspectorSwitch.checked = false
