@@ -8,7 +8,7 @@ const starField = (apply) => {
   if (apply === true) {
     const container = document.getElementById('title-content')
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
       const randomLeft = Math.floor(Math.random() * 95)
       const randomTop = Math.floor(Math.random() * 95)
 
