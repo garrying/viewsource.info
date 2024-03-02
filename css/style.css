@@ -104,6 +104,7 @@ blockquote {
   padding-left: 1rem;
   border-left: 2px dotted rgb(var(--blockquote-border) / 40%);
   hanging-punctuation: first allow-end last;
+  text-wrap: balance;
 }
 
 
@@ -235,10 +236,6 @@ textarea {
 
 .f5 {
   font-size: 1rem;
-}
-
-.balanced {
-  text-wrap: balance;
 }
 
 .word-wrap {
