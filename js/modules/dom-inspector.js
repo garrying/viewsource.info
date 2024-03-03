@@ -243,7 +243,7 @@
           marginRight: this._createSurroundEle(parent, 'margin margin-right'),
           marginBottom: this._createSurroundEle(parent, 'margin margin-bottom'),
           marginLeft: this._createSurroundEle(parent, 'margin margin-left'),
-          tips: this._createSurroundEle(parent, 'tips', '&lt;<div class="tag"></div><div class="id"></div><div class="class"></div><div class="href"></div><div>&gt;</div><div class="size"></div>')
+          tips: this._createSurroundEle(parent, 'tips', '<code>&lt;<span class="tag"></span><span class="id"></span><span class="class"></span><span class="href"></span><span>&gt;</span></code><span class="size"></span>')
         }
 
         this.root.appendChild(parent)
