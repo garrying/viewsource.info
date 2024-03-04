@@ -22,7 +22,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --token-name: #f29766;
-  --inspector-tip: #0f0f0ff5;
+  --inspector-tip: #1c1917f5;
   --inspector-tag: #fff;
   --inspector-margin: rgba(146, 146, 146, 0.118);
   --inspector-padding: rgba(146, 146, 146, 0.216);
@@ -183,13 +183,12 @@ textarea {
   font-family: var(--font-family-mono);
 }
 
-.title-content {
-  position: relative;
+.title-content-heading {
   font-size: clamp(2rem, 2vw, 3vw);
 }
 
 @media (max-width: 30em) {
-  .title-content {
+  .title-content-heading {
     font-size: 1.9rem;
   }
 }

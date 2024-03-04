@@ -22,7 +22,7 @@ const starField = (apply) => {
   } else {
     const stars = document.querySelectorAll('.star')
 
-    stars.forEach(function (star) {
+    stars.forEach((star) => {
       star.parentNode.removeChild(star)
     })
   }
@@ -54,4 +54,3 @@ if (titleImage) {
     duskModeToggle()
   })
 }
-
