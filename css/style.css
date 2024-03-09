@@ -4,10 +4,11 @@
   --text-color: #2d2723;
   --background: #f8f4ed;
   --background-dusk: #1c1917;
-  --inspector-margin: rgba(146, 146, 146, 0.148);
-  --inspector-padding: rgba(146, 146, 146, 0.216);
-  --inspector-border: rgba(233, 233, 233, 0.555);
-  --inspector-content: rgba(190, 190, 190, 0.093);
+  --inspector-margin: rgb(146 146 146 / 14.8%);
+  --inspector-padding: rgb(146 146 146 / 21.6%);
+  --inspector-border: rgb(233 233 233 / 55.5%);
+  --inspector-border-width: rgb(127 127 127 / 56%);
+  --inspector-content: rgb(190 190 190 / 9.3%);
   --inspector-tip: #f8f4edf5;
   --inspector-tag: #000;
   --token-name: #9c611f;
@@ -24,10 +25,10 @@
   --token-name: #f29766;
   --inspector-tip: #1c1917f5;
   --inspector-tag: #fff;
-  --inspector-margin: rgba(146, 146, 146, 0.118);
-  --inspector-padding: rgba(146, 146, 146, 0.216);
-  --inspector-border: rgba(233, 233, 233, 0.151);
-  --inspector-content: rgba(190, 190, 190, 0.027);
+  --inspector-margin: rgb(146 146 146 / 11.8%);
+  --inspector-padding: rgb(146 146 146 / 21.6%);
+  --inspector-border: rgb(233 233 233 / 15.1%);
+  --inspector-content: rgb(190 190 190 / 2.7%);
   --text-color: #ccc;
   --blockquote-border: 255 255 255;
   --background: #1c1917;
@@ -78,7 +79,7 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0 0 0 / 0);
 }
 
 h1 {
@@ -279,8 +280,8 @@ textarea {
   text-decoration: none;
   color: #000;
   opacity: 1;
-  border-style: solid;
-  border-width: 1px;
+  border-style: dotted;
+  border-width: 2px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
@@ -351,7 +352,7 @@ textarea {
 /* dom inspector */
 
 .element-token {
-  color: rgba(146, 146, 146, 0.2);
+  color: rgba(146 146 146 / 20%);
 }
 
 .token-name {
@@ -480,7 +481,7 @@ textarea {
 }
 
 .dom-inspector-theme-default .border {
-  background-color: var(--inspector-border);
+  background-color: var(--inspector-border-width);
 }
 
 .dom-inspector-theme-default .padding {
