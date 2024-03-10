@@ -400,10 +400,6 @@ textarea {
   transition: background-color 120ms ease-in-out;
 }
 
-.bg-background-dusk #inspect-controls {
-  background-color: var(--background-dusk);
-}
-
 .inspect-ornament {
   left: 0;
   right: 0;
@@ -433,7 +429,7 @@ textarea {
 }
 
 .inspect-bottom {
-  bottom: -1em;
+  bottom: -0.9em;
 }
 
 .dom-inspector {
