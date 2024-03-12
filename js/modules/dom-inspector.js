@@ -333,7 +333,7 @@
 
         const newDiv = document.createElement('div')
         newDiv.innerHTML = `<pre class="ma0"><code class="monospace">&lt;${this.target.tagName.toLowerCase()}&gt;</code></pre>`
-        newDiv.className = 'py1 ph2 mt1 element-token'
+        newDiv.className = 'element-token'
 
         document.querySelector('#taglist').appendChild(newDiv)
       }

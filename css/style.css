@@ -313,11 +313,6 @@ textarea {
   padding-bottom: 3rem;
 }
 
-.ph2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .ma0 {
   margin: 0;
 }
@@ -334,10 +329,6 @@ textarea {
   margin-top: 0;
 }
 
-.mt1 {
-  margin-top: 0.25rem;
-}
-
 .mv5 {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -351,7 +342,11 @@ textarea {
 /* dom inspector */
 
 .element-token {
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: rgba(146 146 146 / 20%);
+  transition: color 120ms ease-in-out;
 }
 
 .token-name {
