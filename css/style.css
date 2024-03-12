@@ -287,11 +287,6 @@ textarea {
   padding-bottom: 0.25rem;
 }
 
-.bg-background-dusk .button-link {
-  color: #fff;
-  border-color: #fff;
-}
-
 .button-link,
 .button-link:focus,
 .button-link:hover {
