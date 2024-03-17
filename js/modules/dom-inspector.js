@@ -332,7 +332,7 @@
         addRule(this.overlay.tips, { top: tipsTop + 'px', left: elementInfo.left + 'px', display: 'block' })
 
         const newDiv = document.createElement('div')
-        newDiv.innerHTML = `<pre class="ma0"><code class="monospace">&lt;${this.target.tagName.toLowerCase()}&gt;</code></pre>`
+        newDiv.innerHTML = `<pre class="ma0"><code>&lt;${this.target.tagName.toLowerCase()}&gt;</code></pre>`
         newDiv.className = 'element-token'
 
         document.querySelector('#taglist').appendChild(newDiv)
